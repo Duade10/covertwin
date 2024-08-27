@@ -23,3 +23,9 @@ async def root():
 async def find_song(track_name: str):
     songs = spotify.search_song(track_name)
     return {"songs": songs}
+
+
+@app.get("/get-arist-info/{artist_info}")
+async def fetch_artist_and_genre_info(artist_id: str):
+    result = spotify.get_artist_info(artist_id)
+    return {"info": result}
