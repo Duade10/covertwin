@@ -4,10 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = "*"
 spotipy = "*"
 python-dotenv = "*"
 algoliasearch = "*"
+jinja2 = "*"
+python-multipart = "*"
+fastapi = {extras = ["standard"], version = "*"}
+pillow = "*"
 
 [dev-packages]
 

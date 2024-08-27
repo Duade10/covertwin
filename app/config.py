@@ -11,6 +11,9 @@ API_V1_STR = "/api/v1"
 
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+SPOTIFY_API_URL = os.getenv("SPOTIFY_API_URL")
+
+LAST_FM_API_KEY = os.getenv("LAST_FM_API_KEY")
 
 ALGOLIA_APP_ID = os.getenv("ALGOLIA_APP_ID")
 ALGOLIA_API_KEY = os.getenv("ALGOLIA_API_KEY")
@@ -36,9 +39,6 @@ ENABLE_SONG_SEARCH = os.getenv("ENABLE_SONG_SEARCH", "True").lower() == "true"
 
 SECRET_KEY = os.getenv("SECRET_KEY", "secret")
 
-# API documenation
-DOCS_URL = "/docs"
-OPENAPI_URL = "/openapi.json"
 
 required_env_vars = [
     "SPOTIFY_CLIENT_ID",
