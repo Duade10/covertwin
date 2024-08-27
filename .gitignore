@@ -107,6 +107,7 @@ modules.xml
 [Ss]cripts
 pyvenv.cfg
 .venv
+.env
 pip-selfcheck.json
 
 ### VisualStudioCode ###
@@ -127,3 +128,4 @@ pip-selfcheck.json
 # Ignore all local history of files
 .history
 .ionide
+sample.json
